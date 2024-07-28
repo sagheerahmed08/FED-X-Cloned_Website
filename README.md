@@ -1,4 +1,6 @@
 ![x logo](https://github.com/user-attachments/assets/59909f24-ee9d-4855-aa32-59991dd5aef3)
+
+
 "X Clone" is a web-based social media platform inspired by Twitter, designed to replicate key features such as tweet composition, user interactions, and media uploads. This project serves as a comprehensive learning and development exercise in web technologies, including frontend and backend development.
 
 Purpose
