@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ece1e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(54, 48, 48);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .signup-form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        .signup-form input {
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .create-button {
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #494949;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .create-button:hover {
+            background-color: #000000;
+            margin-top: 20px;
+            padding: 20px;
+            box-shadow: 6px 6px rgba(0, 0, 0, 0.486);
+        }
+        
+        .google-signin {
+            margin-top: 20px;
+        }
+        
+        .google-button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #16121294;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .google-button:hover {
+            background-color: #000000;
+
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;}
+            .text{
+                color: black;
+                text-shadow: 2px 1px#1d1c1c49;
+                
+        }
+        .logo-img1 {
+            position: absolute;
+            width: auto;
+            bottom: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: rgb(7, 7, 7);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .logo-img1:hover {
+            background-color: rgba(0, 0, 0, 0.479); 
+        }
+        .back {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">Create Your Account</h1>
+        <form class="signup-form">
+            <label class="text" for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label class="text"for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label class="text" for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label class="text" for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="create-button">Create Account</button>
+            <div class="google-signin">
+                <button type="button" id="forgotPassword" class="google-button">
+                   Continue with 🔵🔴🟡🟢
+                </button>
+                
+                <a class="back" href="login.html" target="_blank" >back</a>
+            </div>
+        </form>
+        
+    </div>
+    <button onclick="myFunction()"class="logo-img1">💡</button>
+    <script>
+        document.getElementById('forgotPassword').addEventListener('click', function() {
+            alert("Continue with Google functionality is not implemented yet.");
+        });
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ece1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.forgot-password-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(54, 48, 48);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #494949;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #000000;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.486);
+}
+
+p#message {
+    margin-top: 20px;
+    color: #007bff;
+}
+.logo-img1 {
+    position: absolute;
+    width: auto;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dark-mode {
+    background-color: black;
+    color: white;}
+.text{
+        color: black;
+}
+.logo-img1:hover{
+    background-color: rgba(0, 0, 0, 0.479);
+}

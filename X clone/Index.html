@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>X Clone</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Login/signup.html">
+                <img src="Source/x logo.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-btn">Search</button>
+        </div>
+        <nav>
+            <a href="https://x.com/home" target="_blank" class="nav-link">
+                <img src="Source/home.png" alt="Home" class="logo-img">
+            </a>
+            <a href="https://x.com/settings/notifications?lang=en" target="_blank" class="nav-link">
+                <img src="Source/notification.png" alt="Notifications" class="logo-img">
+            </a>
+            <a href="https://x.com/messages" target="_blank" class="nav-link">
+                <img src="Source/message.png" alt="Messages" class="logo-img">
+            </a>
+            <a href="Login/login.html" target="_blank" class="nav-link">
+                <img src="Source/ProfilePic.jpg" alt="Profile" class="logo-img">
+            </a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile-picture">
+                <img src="Source/ProfilePic.jpg" alt="Profile Picture">
+            </div>  
+            <div class="text">
+                <h1>SAGHEER AHMED</h1>
+                <p>@Sagheyy_08</p>
+            </div>
+        </aside>    
+        <main>
+            <div class="tweet-composer">
+                <textarea placeholder="What's happening?" id="tweet-textarea"></textarea>
+                <input type="file" id="tweet-image" accept="image/*">
+                <div id="image-preview" class="image-preview"></div>
+                <div class="tweet-actions">
+                    <span id="char-count">0/280</span>
+                    <button id="tweet-btn">Tweet</button>
+                </div>
+            </div>
+            <div id="tweet-feed">
+            </div>
+        </main>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray;">
+    <div class="username">
+        <h2 class="left-name">@RifathMohamed770</h2>
+            <span class="right-date">27/07/2024</span> 
+    </div>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="Source/Market Typography.jpeg" alt="Image 1" class="image">
+            <div class="like-section">
+                <button class="like-button" onclick="likeImage(this)">Like</button>
+                <span class="like-count">2198</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="Source/173e21d8-8937-4912-b0f4-239c6d6bc37d.jpeg" alt="Image 2" class="image">
+            <div class="like-section">
+                <button class="like-button" onclick="likeImage(this)">Like</button>
+                <span class="like-count">1224</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="Source/Someday Somewhere,.jpeg" alt="Image 3" class="image">
+            <div class="like-section">
+                <button class="like-button" onclick="likeImage(this)">Like</button>
+                <span class="like-count">1120</span>
+            </div>
+        </div>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <div class="username">
+        <h2 class="left-name">@Abulfaiz</h2>
+        <span class="right-date">26/07/2024</span> 
+    </div>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="Source/Connection.jpeg" alt="Image 1" class="image">
+            <div class="like-section">
+                <button class="like-button" onclick="likeImage(this)">Like</button>
+                <span class="like-count">1223</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="Source/Himalayan 2021.jpeg" alt="Image 2" class="image">
+            <div class="like-section">
+                <button class="like-button" onclick="likeImage(this)">Like</button>
+                <span class="like-count">1245</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="Source/kicks.jpeg" alt="Image 3" class="image">
+            <div class="like-section">
+                <button class="like-button" onclick="likeImage(this)">Like</button>
+                <span class="like-count">1943</span>
+            </div>
+        </div>
+    </div>
+    <button onclick="myFunction()" class="logo-img2">💡</button>
+    <footer>
+        <p class="footer">2024 Twitter Clone. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

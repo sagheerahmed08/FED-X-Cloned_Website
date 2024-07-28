@@ -1,0 +1,270 @@
+/* Default (Light Mode) */
+:root {
+    --background-color: #ece1e1;
+    --text-color: #000000;
+    --header-background: #1DA1F2;
+    --tweet-background: #F5F8FA;
+    --tweet-border: #ccc;
+}
+
+body {
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    align-items: center;
+}
+h1:hover{
+    color:#ed0f0f84;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--header-background);
+    color: white;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 5px;
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 16px;
+}
+
+#search-btn {
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+.logo-img1 {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.logo-img2 {
+    position:fixed;
+    width: auto;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logo-img2:hover{
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.profile-picture {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 40px;
+    overflow: hidden;
+    border: 3px solid #000000;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    border-radius: 50%;
+}
+.logo-img:hover {
+    box-shadow: 5px 5px 10px 10px #0056b3;
+}
+.logo-img1 {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+.logo-img:hover {
+    box-shadow: 5px 5px 10px 10px #0056b3;
+}
+input[type="text"] {
+    flex: 1;
+    margin-left: 0 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+nav {
+    display: flex;
+   align-items: center;}
+
+.nav-link {
+    margin-left: 20px;
+    color: white;
+    font-size: 1em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+aside {
+    position: flex;
+    width: 20%;
+    padding: 10px;
+}
+
+main {
+    width: 60%;
+    padding: 10px;
+}
+
+.tweet-composer {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#char-count {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+#tweet-btn {
+    background-color: var(--header-background);
+    color: white;
+    border: none;
+    margin-left: 1100px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#tweet-btn:disabled {
+    background-color: #AAB8C2;
+    cursor: not-allowed;
+}
+
+#tweet-feed .tweet {
+    padding: 10px;
+    border-bottom: 1px solid var(--tweet-border);
+    margin-bottom: 10px;
+    background-color: var(--tweet-background);
+}
+
+.tweet-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.like-section {
+    display: flex;
+    align-items: center;
+}
+
+.like-btn, .delete-btn {
+    margin-left: 10px;
+    background-color: var(--header-background);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+hr{
+    margin-top: 100px;
+}
+.like-btn:hover, .delete-btn:hover {
+    background-color: #0d95e8;
+}
+
+.like-count {
+    margin-left: 5px;
+    font-weight: bold;
+}
+.tweet-time {
+    font-style: italic;
+    color: #777;
+}
+
+.image-preview img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.text {
+    text-align: center;
+}
+.footer{
+    text-align:center;
+    background-color: #1DA1F2;
+}
+.image-container {
+    margin-top: 20px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: auto;
+    width: 60%; 
+    max-width: 1000px; 
+    gap: 10px;
+  }
+.image {
+    width: 100%; 
+    height: auto;
+    flex: 4; 
+    object-fit: cover; 
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.username{
+        display: flex;
+        justify-content: space-between;
+        text-decoration:3px underline;
+      }
+
+.left-name{
+    margin-left: 450px;
+}
+.right-date{
+    margin-right: 450px;
+    margin-top: 20px;
+}
