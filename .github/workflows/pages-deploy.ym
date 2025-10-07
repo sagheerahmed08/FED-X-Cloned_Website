@@ -1,0 +1,25 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # If using root, keep this as is; if your site is in X clone/, set path accordingly.
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Upload static files
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./X clone
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
+
